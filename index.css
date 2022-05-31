@@ -1,0 +1,3203 @@
+.science-section {
+  padding: 50px 0;
+}
+
+.science-section .section-heading p {
+  text-transform: uppercase;
+  color: #3ca6ca;
+  font-weight: bold;
+}
+.science-section .section-heading p {
+  text-transform: uppercase;
+  color: #3ca6ca;
+  font-weight: bold;
+}
+
+.science-section .flex-container {
+  padding: 32px 0;
+  /* display: none; */
+}
+
+.science-section .why-video {
+  text-align: left;
+}
+
+.science-section .why-video * {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.science-section .why-video h3 {
+  color: #3ca6ca;
+  font-size: 1.75rem;
+}
+.science-section .why-video span {
+  font-weight: bold;
+}
+
+.science-section .tab {
+  text-align: center;
+  margin: 45px auto 0;
+  border-bottom: solid 3px #fcfcfc;
+  width: 600px;
+}
+
+.science-section .tab .tab-links {
+  margin: 0 15px;
+  padding: 0 35px;
+  background: unset;
+  font-size: 1rem;
+  padding-bottom: 20px;
+  border-bottom: solid 3px transparent;
+}
+
+.science-section .tab .tab-links.active-tab {
+  border-bottom: solid 3px #3ca6ca;
+  font-weight: bold;
+  cursor: auto;
+}
+
+.science-section .tab-content {
+  /* display: none; */
+  animation: fadeEffect 2s; /* Fading effect takes 1 second */
+}
+
+.science-section .tab-content img {
+  position: relative;
+  animation: translateImage 1s;
+  width: 100%;
+  height: auto;
+}
+
+.science-section .tab-content .why-video {
+  position: relative;
+  animation: translateDiv 1s;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes translateImage {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes translateDiv {
+  from {
+    /* right: -150px; */
+    top: 150px;
+  }
+  to {
+    /* right: 0px; */
+    top: 0px;
+  }
+}
+@media (max-width: 1250px) {
+  .science-section .why-video {
+    order: 2;
+  }
+  .science-section .why-content {
+    order: 1;
+  }
+}
+@media (max-width: 600px) {
+  .science-section .tab {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  /* .science-section .tab::-webkit-scrollbar {
+    display: none;
+  } */
+
+  .science-section .tab::-webkit-scrollbar {
+    /* position: relative;
+    top: 2px; */
+  }
+
+  /* Added for scrollbar use */
+  .science-section .flex-container {
+    padding-top: 20px;
+  }
+
+  .science-section .tab {
+    padding-bottom: 20px;
+  }
+
+  /* End of styles for scrollbar use */
+
+  .science-section .tab .tab-links {
+    flex: 0 0 auto;
+  }
+}
+
+/* ------STYLINGS PAST THIS POINT ARE FROM LIVE SITE TO MIMIC DEV ENVIRONMENT---------- */
+
+/* Remove padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+Theme Name: divi-child-theme
+Description: Child Divi Theme
+Author: Jay Franks
+Template: Divi
+Version: 1.0
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain) */
+
+/* Removing underline on divi buttons */
+.et_pb_button {
+  text-decoration: none;
+}
+
+/* Reseting divi defaults */
+.et_builder_inner_content p {
+  line-height: 1.5;
+}
+
+.et_builder_inner_content h1 {
+  font-size: 2.25rem;
+}
+
+.et_builder_inner_content h2 {
+  font-size: 2rem;
+}
+
+.et_builder_inner_content h3 {
+  font-size: 1.5rem;
+}
+
+.et_builder_inner_content h1,
+.et_builder_inner_content h2,
+.et_builder_inner_content h3,
+.et_builder_inner_content h4,
+.et_builder_inner_content h5,
+.et_builder_inner_content h6 {
+  padding: 15px 0;
+}
+
+/*Theme customization starts here
+------------------------------------------------------- */
+
+/* Product page price for related products */
+section.related span.price {
+  display: flex !important;
+}
+
+section.related bdi {
+  margin-right: 5px !important;
+}
+
+/* -----------Homepage styling -------------*/
+
+/* Please not - defualt styles that want to be include on all pages, include in custom-header.css - styles.css is dequeued on product pages*/
+
+.section-heading {
+  text-align: center;
+}
+
+/* Section heading style set up */
+.section-heading h2 {
+  font-weight: bold;
+  font-size: 2.25rem;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+
+.section-heading h4 {
+  font-size: 1.2rem;
+  margin: 0 0 2.5px;
+}
+
+/* container set up */
+.container {
+  max-width: 1300px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 90%;
+    margin: 5% auto;
+  }
+  /* Divi rows */
+  .et_pb_row {
+    width: 90% !important;
+  }
+}
+
+/* ---------SLICK HOMEPAGE SLIDER -----------*/
+
+#hero-section {
+  margin: 0;
+}
+
+/* Making image scale */
+#hero-section .slick-slide img {
+  width: 100%;
+  /* height: 65vh; */
+}
+
+/* Moving dots position on top of image */
+#hero-section .slick-dots {
+  bottom: 15px;
+}
+
+/* Dots */
+#hero-section .slick-dots li button:before {
+  font-size: 12.5px;
+  color: white;
+}
+
+/* Active dot */
+#hero-section .slick-dots li.slick-active button:before {
+  color: white;
+}
+
+#hero-section .slick-prev,
+#hero-section .slick-next {
+  position: absolute;
+  -ms-transform: translateY(-50%); /* IE 9 */
+  -webkit-transform: translateY(-50%); /* Safari */
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+#hero-section .slick-prev:before,
+#hero-section .slick-next:before {
+  font-size: 3.5rem;
+}
+
+#hero-section .slick-prev {
+  left: 10%;
+  top: 45%;
+}
+
+#hero-section .slick-next {
+  content: "/f0a9" !important;
+  right: 10%;
+  top: 45%;
+}
+
+@media (max-width: 1233px) {
+  #hero-section .slick-prev {
+    left: 2.5%;
+  }
+
+  #hero-section .slick-next {
+    right: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero-section .slick-prev {
+    display: none !important;
+  }
+
+  #hero-section .slick-next {
+    display: none !important;
+  }
+
+  #hero-section .slick-dots li {
+    margin: 0 10px;
+  }
+
+  #hero-section .slick-dots li button:before {
+    font-size: 15px;
+  }
+}
+
+/* HERO */
+.slick-hero-image {
+  height: 70vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Home */
+
+.slick-hero-image {
+  background-image: url("/wp-content/uploads/2021/09/hero-allergytest.webp");
+}
+
+/* .no-webp .slick-hero-image {
+  background-image: url("/wp-content/uploads/2021/09/hero-allergytest.jpg");
+} */
+
+/* Blood */
+
+.blood.slick-hero-image {
+  background-image: url("/wp-content/uploads/2021/09/hero-allergy-intolerance-testing.webp");
+}
+
+/* .no-webp .blood.slick-hero-image {
+  background-image: url("/wp-content/uploads/2021/09/hero-allergy-intolerance-testing.jpg");
+} */
+
+/* Hair */
+
+.hair.slick-hero-image {
+  background-image: url("/wp-content/uploads/2021/09/hero-sensitivity-testing.webp");
+}
+
+/* .no-webp .hair.slick-hero-image {
+  background-image: url("/wp-content/uploads/2021/09/hero-sensitivity-testing.jpg");
+} */
+
+/* Health */
+
+.health.slick-hero-image {
+  background-image: url("/wp-content/uploads/2021/09/hero-health-testing.webp");
+}
+/*
+.no-webp .health.slick-hero-image {
+  background-image: url("/wp-content/uploads/2021/09/hero-health-testing.jpg");
+} */
+
+.slick-hero-text {
+  text-align: center;
+  max-width: 1080px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slick-hero-text h1,
+.slick-hero-text h2 {
+  font-size: 3rem;
+  color: white !important;
+  width: 85%;
+  margin: 0 auto;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.slick-hero-text h3 {
+  color: white !important;
+  font-size: 1.5rem;
+  width: 75%;
+  margin: 10px auto 30px;
+  line-height: 1.25;
+  font-weight: normal;
+}
+
+.home-slide .btn {
+  display: none;
+}
+
+.btn {
+  padding: 11px 25px;
+  border: solid 3px white;
+  color: white;
+  border-radius: 2em;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.fa-chevron-down {
+  font-size: 1.5rem !important;
+}
+
+/* Jay Landing Hero */
+@media (min-width: 1500px) {
+  .slick-hero-image {
+    height: 60vh !important;
+  }
+
+  .slick-hero-text h1,
+  .slick-hero-text h2 {
+    font-size: 3.25rem !important;
+    width: 100% !important;
+  }
+
+  .slick-hero-text h3 {
+    font-size: 1.5rem !important;
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 1250px) {
+  .slick-hero-text {
+    width: 80%;
+  }
+
+  .slick-hero-text h1,
+  .slick-hero-text h2 {
+    width: 100%;
+  }
+
+  .slick-hero-text h3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-content {
+    font-size: 1rem;
+  }
+
+  .home-slide .btn {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .slick-hero-text {
+    width: 90%;
+  }
+
+  /* Home */
+
+  .slick-hero-image {
+    height: 65vh;
+  }
+
+  .slick-hero-image {
+    background-image: url("/wp-content/uploads/2021/09/allergytest-mobile.webp");
+  }
+
+  /* .no-webp .slick-hero-image {
+    background-image: url("/wp-content/uploads/2021/09/allergytest-mobile.jpg");
+  } */
+
+  /* Allergy */
+
+  .blood.slick-hero-image {
+    background-image: url("/wp-content/uploads/2021/09/allergy-intolerance-mobile.webp");
+  }
+
+  /* .no-webp .blood.slick-hero-image {
+    background-image: url("/wp-content/uploads/2021/09/allergy-intolerance-mobile-1.jpg");
+  } */
+
+  /* Sensitivity */
+
+  .hair.slick-hero-image {
+    background-image: url("/wp-content/uploads/2021/09/sensitivity-testing-mobile.webp");
+  }
+
+  /* .no-webp .hair.slick-hero-image {
+    background-image: url("/wp-content/uploads/2021/09/sensitivity-testing-mobile-1.jpg");
+  } */
+
+  /* Health */
+  .health.slick-hero-image {
+    background-image: url("/wp-content/uploads/2021/09/health-testing-mobile.webp");
+  }
+
+  /* .no-webp .health.slick-hero-image {
+    background-image: url("/wp-content/uploads/2021/09/health-testing-mobile-1.jpg");
+  } */
+
+  #hero-section button {
+    padding: 7px 15px;
+    font-size: 0.85rem;
+  }
+
+  .slick-hero-text h1,
+  .slick-hero-text h2 {
+    font-size: 2rem;
+    width: 100%;
+    margin: 5px 0;
+    line-height: 1.2;
+  }
+
+  .slick-hero-text h3 {
+    font-size: 1.2rem;
+    margin: 5px auto 25px;
+    line-height: 1.5;
+    width: 100%;
+  }
+}
+
+/* iphone 6,7,8, X */
+@media (max-width: 375px) {
+  .slick-hero-image {
+    height: 70vh;
+  }
+}
+
+/* iphone 5 & SE */
+@media (max-width: 320px) {
+  .slick-hero-text h1,
+  .slick-hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .slick-hero-text h3 {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+
+/* ------END OF SLICK HOMEPAGE SLIDER--------- */
+
+/*--- Old sales hero section - stylings still used for landing page and shop heros---- */
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  /* height: 70%; */
+  position: relative;
+  padding: 10px 0;
+}
+
+.hero-div {
+  width: 85%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  text-align: center;
+  position: relative;
+  /* added due to large image, remove for mobile */
+  width: 55%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text {
+  text-align: left;
+  width: 45%;
+  color: #0c7088 !important;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #0c7088;
+}
+
+.hero-text h3 {
+  width: 90%;
+  font-size: 1.3rem;
+  /* color: #545454; */
+  color: black;
+  line-height: 1.5 !important;
+  font-weight: 400;
+}
+
+.hero-text h4 {
+  font-size: 1.8rem;
+  color: #0c7088;
+  width: 165px !important;
+}
+
+.hero-text h1,
+.hero-text h3,
+.hero-text h4 {
+  margin: 10px 0;
+  line-height: 1.1;
+}
+
+.hero-text.home h1 {
+  width: 95%;
+  font-size: 1.2rem;
+  /* color: #545454; */
+  color: black;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.hero-text.home h3 {
+  font-size: 3rem;
+  color: #0c7088;
+  font-weight: bold;
+  line-height: 1 !important;
+  width: 100%;
+}
+
+.hero-text.home h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  background-color: #ac131d;
+  color: white;
+  width: 150px !important;
+  padding: 2%;
+  margin-bottom: 5px;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  text-align: center;
+}
+
+.hero-container button {
+  margin-top: 15px;
+}
+
+/*--- Value proposition section---- */
+
+.value-container {
+  padding: 1.5% 0 1%;
+  text-align: center !important;
+}
+
+.value-container .fas {
+  color: #0c7088;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.value-container p {
+  font-weight: bold;
+}
+
+.client-area {
+  width: 100%;
+  margin: 10px auto 0;
+}
+
+.value-container div {
+  text-align: center;
+}
+
+/* SLICK CUSTOMISATION FOR VALUE PROPS */
+
+.value-container .slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.value-container .slick-list:focus {
+  outline: none;
+}
+
+.value-container .slick-slide {
+  /* display: none; */
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.value-container .slick-slide img {
+  display: block;
+}
+
+.value-container .slick-initialized .slick-slide {
+  display: block;
+}
+
+.value-container .slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+/*--- Our tests section---- */
+
+.our-tests {
+  padding: 2.5% 0;
+  text-align: center;
+}
+
+/* a tag acts as a div */
+.our-tests a {
+  color: black;
+  width: 22.5%;
+  text-decoration: none !important;
+}
+
+/* Margins between elements */
+.our-tests h3,
+.our-tests p {
+  margin: 7.5px 0;
+  padding: 0;
+}
+
+.our-tests h3 {
+  font-size: 1.1rem;
+}
+
+.our-tests p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.tests-description {
+  line-height: 1.75;
+  margin: 2.5% auto 0 !important;
+  width: 85%;
+}
+
+.tests-description.mobile {
+  display: none;
+}
+
+.tests-description span {
+  font-weight: 600;
+}
+
+.tests-container {
+  padding: 2.5% 0;
+}
+
+.our-tests .tests-container div {
+  background-color: #f6f6f6;
+  transition: 0.3s;
+  padding: 45px 5px;
+  border-radius: 15px;
+  transition: all 250ms ease-in-out;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+.our-tests .hair:hover {
+  box-shadow: 0px 8px 15px rgba(86, 185, 217, 30%);
+  -webkit-box-shadow: 0px 8px 15px rgba(86, 185, 217, 30%);
+}
+
+.our-tests .blood:hover {
+  box-shadow: 0px 8px 15px rgba(172, 19, 29, 30%);
+  -webkit-box-shadow: 0px 8px 15px rgba(172, 19, 29, 30%);
+}
+
+.our-tests .health:hover {
+  box-shadow: 0px 8px 15px rgba(5, 98, 45, 30%);
+  -webkit-box-shadow: 0px 8px 15px rgba(5, 98, 45, 30%);
+}
+
+.our-tests .all-tests:hover {
+  box-shadow: 0px 8px 15px rgba(12, 112, 136, 30%);
+  -webkit-box-shadow: 0px 8px 15px rgba(12, 112, 136, 30%);
+}
+
+.tests-container button {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  background-color: #0c7088;
+  border: none;
+  color: #ffffff;
+  border-radius: 2em;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 11px 25px;
+  margin-top: 10px;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+}
+
+.tests-container button.health {
+  background-color: #05622d;
+}
+
+.tests-container .health button:hover {
+  box-shadow: unset !important;
+  -webkit-box-shadow: unset !important;
+}
+
+.tests-container button.allergy {
+  background-color: #ac131d;
+}
+
+.tests-container button.shop {
+  background-color: #0c7088;
+}
+
+/*--- Trusted shops section---- */
+
+/* relative > absolute positioning */
+.fullwidth-strip {
+  position: relative;
+  background-color: #0c7088;
+  color: white;
+  padding: 20px 0;
+  margin: 2.5% 0 5%;
+  line-height: 1.5;
+}
+
+.fullwidth-strip .img-div {
+  width: 20%;
+}
+
+.fullwidth-strip .desc-div {
+  width: 80%;
+  text-align: left;
+}
+
+.fullwidth-strip img {
+  width: 140px;
+  z-index: 2;
+  position: absolute;
+  top: -45px;
+}
+
+.fullwidth-strip p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.fullwidth-strip a {
+  color: white;
+}
+
+.fullwidth-strip .fas {
+  color: #ffdc0f;
+}
+
+/* STRIPS MOBILE SLIDER */
+
+.strips-area .slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.strips-container {
+  background: #0c7088;
+  margin: 10% 0 15%;
+  padding: 5px 0;
+}
+
+.strips-area p,
+.strips-area a {
+  color: white;
+  font-weight: bold;
+}
+
+.strips-area img {
+  margin-right: 12.5px;
+  width: 40px;
+}
+
+/* Dots */
+.strips-container .slick-dots li button:before {
+  font-size: 7.5px;
+  color: white;
+}
+
+/* Active dot */
+.strips-container .slick-dots li.slick-active button:before {
+  color: white;
+}
+
+#trusted {
+  margin: 0;
+}
+
+@media (min-width: 601px) {
+  .strips-container {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .strips-area p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 376px) {
+  .strips-area p {
+    font-size: 13px;
+  }
+}
+
+/*--------Product section styles--------*/
+
+.products-container {
+  margin: 2.5% 0 1%;
+  align-items: flex-start;
+}
+
+.products-container.two-products {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.product-j {
+  /* Makes products all the same height on hover, regardless of content on some making them larger */
+  min-height: 420px;
+  width: 25%;
+  text-align: left;
+  padding: 0 2.5%;
+  border-right: solid 2px #f6f5f5;
+  line-height: 1.5;
+  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+}
+
+.product-j.right {
+  border-right: 0 !important;
+}
+
+.product-inner {
+  margin: 15px 0 35px;
+}
+
+.product-j:hover {
+  background: #f6f5f5;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  /* transform: translateY(-2.5px);
+  -webkit-transform: translateY(-2.5px); */
+}
+
+.product-j h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  padding: 0;
+}
+
+.product-j img {
+  width: 100%;
+  height: 100%;
+}
+
+.tag {
+  padding-left: 5px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  height: 7px;
+  font-weight: bold;
+  line-height: 0.8 !important;
+  margin: 10px 0 5px;
+}
+
+#et-main-area .tag {
+  line-height: 0.8 !important;
+}
+
+.hair .tag {
+  border-left: solid 3px #56b9d9;
+}
+
+.blood .tag {
+  border-left: solid 3px #ac131d;
+}
+
+.health .tag {
+  border-left: solid 3px #05622d;
+}
+
+.product-j ul {
+  list-style: disc;
+  padding: 0 15px !important;
+  margin: 0;
+}
+
+.product-j .items-tested {
+  margin-bottom: 1px;
+}
+
+.product-j ul li {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.product-j ul p {
+  font-size: 0.8rem;
+  color: #605e5e;
+  margin: 3px 0 0;
+}
+
+.product-j ul p {
+  margin: 0;
+}
+
+.product-j .prices {
+  display: flex;
+  align-items: center;
+  padding: 2px 0;
+  flex-wrap: wrap;
+}
+
+.product-j .prices p {
+  margin: 0 7px 0 0;
+  padding: 0;
+}
+
+.product-j .prices .now-price {
+  margin-right: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: red;
+}
+
+.product-j .prices .was-price {
+  text-decoration: line-through;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.you-save-div {
+  margin: 5px 0 15px;
+}
+
+.you-save-div p {
+  font-size: 0.85rem;
+  color: red;
+}
+
+.buttons-div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+.product-j button {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  border: none;
+  padding: 11px 8px;
+  border-radius: 2em;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+
+.hair button {
+  background-color: #56b9d9;
+}
+
+.blood button {
+  background-color: #ac131d;
+}
+
+.health button {
+  background-color: #05622d;
+}
+
+.product-j .basket-link {
+  color: black;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.buttons-div a {
+  width: 48%;
+}
+
+/* button 100% width of buttons div a */
+.buttons-div a button {
+  width: 100%;
+}
+
+.best-sellers {
+  margin-bottom: 2.5%;
+}
+
+/* Extra info */
+
+.extra-info {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px 0 50px;
+  text-align: left;
+}
+
+.extra-info.home {
+  padding-top: 0;
+}
+
+.extra-info h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 25px;
+  line-height: 1 !important;
+}
+
+/* .extra-info i {
+  margin-right: 5px;
+} */
+
+.extra-info p {
+  font-size: 0.95rem;
+}
+
+.extra-info.flex-container {
+  align-items: flex-start;
+}
+
+.extra-info div {
+  width: 30%;
+}
+
+.extra-info .tag {
+  height: 100%;
+  text-transform: capitalize;
+}
+
+.tag.hair {
+  border-left: solid 3px #56b9d9;
+}
+
+.tag.blood {
+  border-left: solid 3px #ac131d;
+}
+
+.tag.health {
+  border-left: solid 3px #05622d;
+}
+
+.tag.normal {
+  border-left: solid 3px #0c7088;
+}
+
+/*-------- Steps section---------- */
+
+.steps {
+  margin: 0 auto 5%;
+  text-align: center;
+}
+
+.steps .flex-container {
+  align-items: flex-start;
+}
+
+.steps .section-heading h2 {
+  margin-top: 0;
+}
+
+.steps h3 {
+  font-weight: bold;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+.steps-container p {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.steps .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 30px auto;
+}
+
+#hair-steps-btn,
+#blood-steps-btn,
+#health-steps-btn {
+  background: #f6f6f6;
+  font-size: 0.85rem;
+  padding: 11px 7px;
+  border-radius: 2em;
+  border: solid 3px transparent;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+}
+
+#hair-steps-btn {
+  color: #56b9d9;
+}
+
+#hair-steps-btn:hover {
+  border: solid 3px #56b9d9;
+}
+
+.active-hair {
+  border: solid 3px #56b9d9 !important;
+}
+
+#blood-steps-btn {
+  color: #ac131d;
+}
+
+#blood-steps-btn:hover {
+  border: solid 3px #ac131d;
+}
+
+.active-blood {
+  border: solid 3px #ac131d !important;
+}
+
+#health-steps-btn {
+  color: #05622d;
+}
+
+#health-steps-btn:hover {
+  border: solid 3px #05622d;
+}
+
+.active-health {
+  border: solid 3px #05622d !important;
+}
+
+.steps .buttons button div {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* small sample svg icons */
+.steps .buttons img {
+  width: 30px;
+  margin-left: 3px;
+}
+
+.steps-container {
+  margin: 2.5% 0;
+}
+
+.steps-container div {
+  width: 22.5%;
+}
+
+.steps-container img {
+  margin: 10px 0;
+}
+
+.generic-steps img {
+  width: 115px;
+  height: 100%;
+}
+
+/* Js functions display flex on button click */
+.steps-container.blood,
+.steps-container.health {
+  display: none;
+}
+
+#blood-title,
+#health-title {
+  display: none;
+}
+
+.steps .small-print {
+  font-size: 0.7rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+/*--- Why us section---- */
+
+#about-us {
+  margin: 0;
+  background-color: unset;
+}
+
+#about-us .container {
+  padding: 0.5% 0 5% 0;
+}
+
+.why-us-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.why-us-section button {
+  margin-top: 25px;
+}
+
+.why-us-section {
+  margin: 5% auto;
+  background-color: #fbfbfb;
+}
+
+.why-us-section .flex-container {
+  padding: 30px 0;
+}
+
+.why-us {
+  padding: 5% 0;
+}
+
+.why-us li {
+  text-align: left;
+  margin: 6% 0;
+  line-height: 1.5;
+}
+
+.why-us ul {
+  margin: 0;
+  padding-left: 3.5%;
+}
+
+.why-us img {
+  width: 100%;
+}
+
+.why-content,
+.why-video {
+  width: 47.5%;
+}
+
+.why-content {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.why-content .fas {
+  color: #0c7088;
+  font-size: 1.25rem;
+  margin-right: 5px;
+}
+
+@media (max-width: 1200px) {
+  #about-us .why-video {
+    margin-top: 15px;
+  }
+
+  #about-us .why-content {
+    margin-top: 25px;
+  }
+
+  #about-us .why-video img {
+    height: auto;
+    width: 100%;
+  }
+
+  .why-content div {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-us .container {
+    padding: 7.5% 0% 1px;
+  }
+}
+
+/*--- Customer promise section---- */
+
+.customer-promise {
+  margin: 7.5% auto;
+  text-align: center;
+}
+
+.customer-promise .flex-container {
+  margin: 2.5% 0 5%;
+}
+
+.customer-promise .flex-container div {
+  width: 22.5%;
+}
+
+.customer-promise p {
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.customer-promise img {
+  width: 100px;
+  margin: 10px 0;
+}
+
+/*--- App section---- */
+
+#app-section {
+  background: #fbfbfb;
+  margin: 5% 0;
+  padding: 2.5% 0;
+}
+
+.app-container {
+  /* margin: 5% auto; */
+  margin: 0 auto;
+  text-align: left;
+}
+
+.app-left {
+  width: 40%;
+}
+
+.app-left img {
+  width: auto;
+  height: 100%;
+}
+
+.app-right {
+  width: 60%;
+}
+
+.app-right h2 {
+  font-size: 2.75rem;
+  color: #0c7088;
+  font-weight: bold;
+  margin: 0;
+}
+
+.app-right p {
+  line-height: 1.5;
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.app-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* to align buttons left laptop */
+.app-buttons {
+  position: relative;
+  left: -3px;
+}
+
+.app-buttons img {
+  width: 150px;
+}
+
+.app-right a {
+  color: #0c7088;
+}
+
+.watch-link-div {
+  margin-left: 20px;
+}
+
+.watch-link-div a {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/*--- Reviews section---- */
+
+#reviews-section {
+  padding: 30px 0;
+}
+
+#reviews-section .review-container {
+  display: flex !important;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  cursor: grabbing;
+  /* background-color: #fcfcfc;
+  border-radius: 2em; */
+}
+
+.review-container .review-img-div,
+.review-container .review-desc {
+  width: 41%;
+}
+
+.review-img-div img {
+  width: 100%;
+  height: 100%;
+}
+
+.review-desc {
+  text-align: left;
+}
+
+.review-desc img {
+  width: 70px;
+  height: 45px;
+}
+
+#reviews-section .fas {
+  color: #ffc107;
+  margin-right: 5px;
+}
+
+#reviews-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+#reviews-section h2 {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+#reviews-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Moving dots position on top of image */
+#reviews-section .slick-dots {
+  /* bottom: 10px; */
+}
+
+/* Dots */
+#reviews-section .slick-dots li button:before {
+  font-size: 12.5px;
+  color: #c2c2c2;
+}
+
+/* Active dot */
+#reviews-section .slick-dots li.slick-active button:before {
+  color: #0c7088;
+}
+
+#reviews-section .slick-prev,
+#reviews-section .slick-next {
+  position: absolute;
+  -ms-transform: translateY(-50%); /* IE 9 */
+  -webkit-transform: translateY(-50%); /* Safari */
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+#reviews-section .slick-prev:before,
+#reviews-section .slick-next:before {
+  font-size: 3.5rem;
+  color: #0c7088;
+}
+
+#reviews-section .slick-prev {
+  top: 45%;
+}
+
+#reviews-section .slick-next {
+  content: "/f0a9" !important;
+  top: 45%;
+  right: 0;
+}
+
+@media (max-width: 1000px) {
+  #reviews-section .slick-prev {
+    top: 95%;
+    display: none !important;
+  }
+
+  #reviews-section .slick-next {
+    top: 95%;
+    display: none !important;
+  }
+
+  .review-container .review-img-div,
+  .review-container .review-desc {
+    width: 100%;
+  }
+
+  #reviews-section .review-container {
+    flex-direction: column;
+  }
+
+  .review-desc {
+    margin-top: 20px;
+  }
+
+  #reviews {
+    background-color: #fcfcfc;
+    padding: 15% 0;
+  }
+
+  #reviews-section h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* OLD REVIE CSS BELOW */
+
+.reviews-section {
+  margin: 5% auto;
+  background-color: #fbfbfb;
+}
+
+.reviews-section .section-heading h2 {
+  margin-top: 0;
+}
+
+.reviews-section .container {
+  padding: 5% 0;
+}
+
+.reviews-section .flex-container {
+  margin: 5% 0;
+  align-items: flex-start;
+}
+
+.review {
+  min-height: 295px;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding: 2%;
+  margin-right: 25px;
+  border-radius: 15px;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+}
+
+.review.right {
+  margin-right: 0;
+}
+
+.review:hover {
+  box-shadow: 0px 0px 7px 0px #8a8787;
+  -webkit-box-shadow: 0px 0px 7px 0px #8a8787;
+}
+
+.review a {
+  color: #0c7088;
+  font-weight: bold;
+}
+
+/* circular img */
+.review img {
+  border-radius: 40px;
+  width: 55px;
+}
+
+.review .review-top h4 {
+  margin: 5px 0;
+}
+
+.review h4 {
+  font-weight: bold;
+}
+
+.review-content h4 {
+  margin: 10px 0;
+}
+
+.review-content p {
+  margin: 10px 0 15px;
+  line-height: 1.5;
+}
+
+.review .review-name {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.review .fas {
+  color: #ffc107;
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+}
+
+.review-content {
+  text-align: left;
+}
+
+/* Survey section */
+
+#survey-section .section-heading {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.survey {
+  padding: 0 0 2.5%;
+  text-align: center;
+}
+
+.survey .flex-container {
+  padding: 2.5% 0;
+  align-items: baseline;
+}
+
+.survey .flex-container div {
+  width: 22.5%;
+}
+
+.survey .percentage {
+  max-width: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: center;
+  align-content: center;
+  color: black;
+  margin: 0 auto !important;
+}
+
+.percetnage p {
+  margin: 0;
+}
+
+.survey img {
+  width: 100px;
+  height: 100%;
+}
+
+/* Making slightly bigger, check mobile */
+.survey .truck {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+.survey h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 10px 0;
+  color: inherit !important;
+}
+
+.survey p {
+  text-align: center;
+  margin: 3% auto;
+  line-height: 1.5;
+}
+
+.survey a {
+  color: #0c7088;
+}
+
+.count {
+  margin-right: 3px !important;
+}
+
+/*--- FAQs section---- */
+
+.faqs {
+  margin: 5% auto;
+  text-align: center;
+}
+
+.faqs-container {
+  padding: 2.5% 0;
+}
+
+.faqs-container .dropdown-content {
+  display: none;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+.faqs-container button {
+  padding: 30px 25px !important;
+}
+
+.faqs-container p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.faqs .dropdown-content {
+  padding: 5px 25px;
+  position: relative;
+  top: -30px;
+}
+
+.faqs .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  max-width: 800px;
+  margin: 40px auto 50px;
+}
+
+.faqs button span {
+  font-weight: bold;
+  margin: 0 20px 0 0;
+  line-height: 1.5;
+}
+
+/* buttons */
+.faqs .buttons button div {
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* small sample svg icons */
+.faqs .buttons img {
+  width: 30px;
+  height: 100%;
+  margin-left: 3px;
+}
+
+#faqs-title {
+  font-size: 1.75rem;
+  text-align: left;
+  margin: 40px 0 20px;
+}
+
+#steps-title {
+  text-align: center;
+}
+
+.faq-heading {
+  font-weight: bold;
+}
+
+#hair-faqs-btn,
+#blood-faqs-btn,
+#health-faqs-btn,
+#general-faqs-btn {
+  box-shadow: 0px 4px 15px rgb(0 0 0 / 10%);
+  background: #f6f6f6;
+  font-size: 0.85rem;
+  padding: 7px 20px;
+  border-radius: 2em;
+  border: solid 3px #eaeaea;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+}
+
+#general-faqs-btn {
+  padding: 15px 10px;
+}
+
+.active-general {
+  border: solid 3px #555555 !important;
+}
+
+#hair-faqs-btn {
+  color: #56b9d9;
+}
+
+#hair-faqs-btn:hover {
+  border: solid 3px #56b9d9;
+}
+
+#blood-faqs-btn {
+  color: #ac131d;
+}
+
+#blood-faqs-btn:hover {
+  border: solid 3px #ac131d;
+}
+
+#health-faqs-btn {
+  color: #05622d;
+}
+
+#health-faqs-btn:hover {
+  border: solid 3px #05622d;
+}
+
+#general-faqs-btn:hover {
+  border: solid 3px #555555;
+}
+
+.faqs-container button {
+  text-align: left;
+  /* font-weight: bold; */
+  width: 100%;
+  background-color: #ffffff !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  /* border-top: solid 2px #dedede; */
+  padding: 5px 0;
+  font-size: 1rem;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  margin: 30px 0;
+}
+
+.faqs-container button .fa {
+  font-size: 1.5rem;
+  color: #0c7088;
+  margin-left: 5px;
+}
+
+.faqs-container .dropdown-btn p {
+  display: flex;
+  align-items: center;
+  color: #0c7088;
+}
+
+.faqs-container .dropdown-content p {
+  margin: 15px 0;
+  line-height: 1.75;
+}
+
+.faqs-container .dropdown-content {
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+.faqs-container .dropdown-content a {
+  color: #0c7088;
+}
+
+/* Faqs dropdwon div */
+.faqs-container .dropdown-content div {
+  padding: 20px 0;
+}
+
+/* Js functions display flex on button click */
+.faqs-container.hair,
+.faqs-container.health,
+.faqs-container.general {
+  display: none;
+}
+
+/*--- CTA section---- */
+
+.cta-section {
+  padding: 3.5% 0;
+  background-image: url("/wp-content/uploads/2021/07/at-cta-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  height: 575px;
+}
+
+.cta-section div {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  line-height: 1.75;
+}
+
+.cta-section img {
+  width: 200px;
+}
+
+.cta-section h2 {
+  font-size: 3.5rem;
+  margin: 0;
+  line-height: 1.25;
+  color: white;
+  font-weight: bold;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0 auto 20px;
+  width: 75%;
+  text-transform: capitalize;
+}
+
+/* FIXED BTNS */
+
+.fixed-test-btns {
+  /* HIDING ON DEKSTOP FOR NOW, NEED TO REMOVE TRUSTED SHOPS BADGE ON WHICH TEST PAGE */
+  display: none !important;
+  position: fixed;
+  right: 0;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-test-btns img {
+  width: 50px;
+  padding: 10px;
+}
+
+.fixed-test-btns a {
+  margin: 12.5px 0;
+  background: #f6f6f6;
+  width: 70px;
+  box-shadow: 0px 2px 7px 0px #8a8787;
+  box-shadow: 0px 2px 7px 0px #8a8787;
+  border-radius: 15px 0px 0px 15px;
+}
+
+/* Which test page */
+#health-tests-section p,
+#blood-tests-section p,
+#hair-tests-section p {
+  line-height: 2;
+}
+
+/* #health-tests-section li, #blood-tests-section li, #hair-tests-section li {
+  margin: 10px 0;
+} */
+
+/*---------- DESKTOP---------- */
+
+/*--- Hero section---- */
+
+@media (min-width: 1500px) {
+  .hero-text h1 {
+    font-size: 4rem !important;
+  }
+
+  .hero-text.home h3 {
+    font-size: 4rem !important;
+  }
+
+  .hero-text.home h1 {
+    font-size: 1.3rem !important;
+  }
+
+  .hero-text {
+    width: 40% !important;
+  }
+  .hero-text.home h4 {
+    width: 280px !important;
+  }
+}
+
+/*----------TABLET---------- */
+
+/*--- Hero section---- */
+
+@media (max-width: 1250px) {
+  /* Hide weird transparent overlay */
+  .blockUI.blockOverlay,
+  .blockUI,
+  .blockUI.blockMsg {
+    position: fixed !important;
+    top: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+  .hero-container {
+    padding: 2.5% 0 5%;
+  }
+
+  .hero-div {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 70%;
+  }
+
+  .hero-text h1,
+  .hero-text h3,
+  .hero-text h4 {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    position: relative;
+    top: -30px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.75rem;
+    width: 100%;
+  }
+
+  .hero-text.home h1 {
+    width: 100%;
+  }
+
+  .hero-text.home h3 {
+    font-size: 2.75rem;
+  }
+
+  .hero-text.home h4 {
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  /* Flex container wrap */
+
+  .flex-container {
+    flex-wrap: wrap;
+  }
+
+  /*--- Value proposition section---- */
+
+  /*-------Product section-------- */
+
+  .products-container.two-products {
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: center;
+    /* flex-wrap: unset; */
+  }
+
+  .products-container .product-j {
+    width: 47.5%;
+    border-right: 0;
+  }
+
+  .products-container {
+    justify-content: space-between;
+  }
+
+  /*--- Our tests section---- */
+
+  /* our tests div */
+  .our-tests a {
+    width: 46.5%;
+  }
+
+  .tests-container div {
+    margin: 20px 0;
+  }
+
+  /*--- Trusted shops section---- */
+
+  /* hide */
+  .fullwidth-strip {
+    display: none;
+  }
+
+  /*--- Steps section---- */
+
+  .steps-container div {
+    width: 47.5%;
+    margin: 2.5% 0;
+  }
+
+  /* .steps-container img {
+    width: 100%;
+  } */
+
+  .steps .buttons {
+    width: 90%;
+  }
+
+  /*--- Why us section---- */
+
+  .why-us {
+    padding: 12.5% 0;
+  }
+
+  .why-us-container div {
+    margin: 5% 0;
+  }
+
+  .why-content,
+  .why-video {
+    width: 100%;
+  }
+
+  .why-video {
+    margin: 0;
+  }
+
+  .why-content {
+    order: 2;
+  }
+
+  .why-us ul {
+    padding-left: 0;
+  }
+
+  .why-us-section .flex-container {
+    margin: 10% 0;
+  }
+
+  /*--- Customer promise section---- */
+
+  .customer-promise {
+    margin: 17.5% auto;
+  }
+
+  .customer-promise .flex-container div {
+    width: 47.5%;
+    margin: 5% 0;
+  }
+
+  /*--- App section---- */
+
+  #app-section {
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .app-container {
+    /* removing 90% width setting as 100% and giving background colour as strip section is hidden */
+    width: 100%;
+    /* Giving container padding */
+    padding: 12.5% 0;
+  }
+
+  .app-left,
+  .app-right {
+    /* width 90% as container is now 100% of width */
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .app-right h2 {
+    font-size: 2.5rem;
+  }
+
+  .app-right p {
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
+
+  .app-buttons {
+    align-items: flex-start;
+  }
+
+  /*--- Reviews section---- */
+
+  .reviews-section {
+    background-color: white;
+  }
+
+  .review {
+    min-height: unset;
+    width: 47.5%;
+    margin: 5% 0;
+    padding: 5% 2.5%;
+  }
+
+  /* .review h4, .review .fas, .review h4, .review p, .review a {
+    font-size: 0.8rem;
+  } */
+
+  .review .review-top h4 {
+    margin: 0;
+  }
+
+  .review img {
+    width: 45px;
+  }
+
+  /* Survey */
+
+  .survey {
+    width: 100%;
+    background-color: #fbfbfb;
+    padding: 10% 0;
+  }
+
+  .survey .flex-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .survey .flex-container div {
+    width: 47.5%;
+    margin: 5% 0;
+  }
+
+  .survey p {
+    width: 100%;
+  }
+
+  /*--- Faqs section---- */
+
+  .faqs .buttons {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .faqs .buttons button {
+    width: 45%;
+    margin: 10px 0;
+  }
+
+  .faqs .buttons button div {
+    justify-content: center;
+  }
+
+  .faqs-container {
+    padding: 25px 0;
+  }
+
+  /* Cta section */
+
+  .cta-section div {
+    width: 85%;
+  }
+
+  .cta-section img {
+    width: 175px;
+  }
+
+  .cta-section h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 5px 0;
+  }
+
+  .cta-section p {
+    /* font-size: 1rem; */
+    width: 100%;
+    margin: 5px auto 30px;
+  }
+}
+
+/* Changing order of rows for mobile using flex */
+@media (max-width: 981px) {
+  #flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #flex-mobile-1 {
+    order: 2;
+  }
+
+  #flex-mobile-2 {
+    order: 1;
+  }
+}
+
+/* Customising defualt fullwidth header styles */
+
+.et_pb_fullwidth_header .et_pb_fullwidth_header_container {
+  width: 90% !important;
+}
+
+.et_pb_fullwidth_header
+  .et_pb_fullwidth_header_container.center
+  .header-content {
+  margin: 20px auto !important;
+  width: 100% !important;
+  padding: 10px 0;
+}
+
+.et_pb_module_header {
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+/*----------MOBILE---------- */
+
+@media (max-width: 411px) {
+  /* To make sure content is same height */
+  .product-j ul span {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Added due to FW strips on mobile */
+  #survey-section {
+    margin-bottom: 0 !important;
+  }
+
+  /* Section heading style set up */
+  .section-heading h2 {
+    font-size: 2.15rem;
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  /*--- Hero section---- */
+  .hero-container {
+    padding: 10% 0 17.5%;
+  }
+
+  .hero-div {
+    width: 90%;
+  }
+
+  /* remove width for mobile */
+  .hero-image {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .hero-text h3,
+  h4 {
+    margin: 7.5px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2.25rem;
+    margin: 10px 0;
+  }
+
+  .hero-text h3 {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .hero-text.home h1 {
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
+
+  .hero-text.home h3 {
+    font-size: 2.25rem;
+  }
+
+  .hero-text.home h4 {
+    margin-bottom: 15px;
+  }
+
+  .hero-text h4 {
+    font-size: 1.1rem;
+    margin: 2.5% auto;
+  }
+
+  /* Value props */
+
+  .value-container {
+    /* display: none; */
+  }
+
+  .client-area {
+    display: block;
+  }
+
+  /* ---------Product section---------- */
+
+  .products-container {
+    margin: 10% 0 0;
+  }
+
+  .product-j:hover {
+    background: none;
+    box-shadow: unset !important;
+    transform: unset !important;
+  }
+
+  .tag {
+    padding-left: 5px;
+    font-size: 0.7rem;
+    height: 8px;
+    /* line-height: 1 !important; */
+    margin: 15px 0 7.5px;
+  }
+
+  .product-j img {
+    width: 100%;
+  }
+
+  .product-j h3 {
+    line-height: 1.25;
+    font-size: 1rem;
+  }
+
+  .product-j .prices .now-price {
+    margin-right: 5px;
+  }
+
+  .product-j .prices .was-price {
+    font-size: 1rem;
+  }
+
+  .product-j .prices p {
+    margin: 0 5px 0 0;
+  }
+
+  .products-container .product-j {
+    padding: 0;
+  }
+
+  .buttons-div {
+    flex-direction: column;
+  }
+
+  .buttons-div a {
+    width: 100%;
+  }
+
+  .buttons-div button {
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .product-j .basket-link {
+    width: 100%;
+    text-align: center;
+    padding: 11px 0px;
+    border-radius: 2em;
+    background-color: #f6f6f6;
+    text-decoration: none;
+    font-size: 0.85rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.01);
+  }
+
+  /* .product-j ul li {
+    font-size: 0.85rem;
+  } */
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .extra-info div {
+    width: 47.5%;
+    line-height: 1.5;
+  }
+
+  .extra-info.home {
+    position: relative;
+    top: -15px;
+  }
+
+  .extra-info {
+    width: 95%;
+    padding: 0 0 25px;
+  }
+
+  .extra-info h4 {
+    margin-bottom: 15px;
+  }
+
+  /*---------Our tests section--------- */
+
+  /* Hide description on mobile */
+  .our-tests .tests-description {
+    display: none;
+  }
+
+  .tests-description.mobile {
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    margin: 20px 0 10px !important;
+  }
+
+  .our-tests h3 {
+    font-size: 1rem;
+  }
+
+  .our-tests div p {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  .tests-container {
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 15px;
+  }
+
+  /* mobile div padding values */
+  .our-tests .tests-container div {
+    min-height: 215px;
+    padding: 30px 10px;
+  }
+
+  .our-tests .tests-container .margin {
+    margin-top: 10px;
+  }
+
+  .our-tests img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*--- Steps section---- */
+
+  .steps {
+    margin: 10% auto 20%;
+  }
+
+  .steps h3 {
+    font-size: 1.5rem;
+  }
+
+  .steps .buttons {
+    margin: 7.5% auto;
+  }
+
+  /* .steps-container p {
+    font-size: 0.9rem;
+  } */
+
+  #hair-steps-btn,
+  #blood-steps-btn,
+  #health-steps-btn {
+    font-size: 0.85rem;
+  }
+
+  .steps .buttons button div {
+    padding: 0 7.5px;
+  }
+
+  .steps .buttons img {
+    width: 25px;
+  }
+
+  /* Reviews */
+
+  .reviews-section .container {
+    padding: 15% 0 12.5%;
+  }
+
+  .review {
+    width: 100%;
+    margin: 25px 0 !important;
+    padding: 10% 5%;
+  }
+
+  .review .review-top h4 {
+    margin: 0;
+  }
+
+  .review img {
+    width: 45px;
+  }
+
+  /* Why us section */
+
+  .why-us li {
+    margin: 10% 0;
+  }
+
+  .why-us-section .flex-container {
+    padding: 0;
+  }
+
+  /*--- App section---- */
+
+  .app-buttons {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .watch-link-div {
+    margin: 20px 0 0;
+  }
+
+  .app-left img {
+    width: 90%;
+  }
+
+  #app-section {
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .app-container {
+    background: none;
+    padding: 10% 0;
+  }
+
+  /* FAQS */
+
+  .faqs {
+    margin: 15% auto 10%;
+  }
+
+  #faqs-title {
+    margin: 35px 0 20px;
+  }
+
+  .faqs .buttons {
+    margin: 30px 0;
+  }
+
+  /* Survey */
+
+  .survey h3 {
+    font-size: 2.5rem;
+  }
+
+  /* Cta section */
+  .cta-section {
+    background-image: linear-gradient(#53abcf, #3ca6ca);
+  }
+
+  /* Fixed test buttons */
+
+  .fixed-test-btns {
+    display: flex !important;
+    position: fixed;
+    z-index: 100;
+    top: unset;
+    bottom: 25px;
+    /* bottom: 0; */
+    right: 5%;
+    /* right: 0; */
+    width: 90%;
+    /* width: 100%; */
+    flex-direction: row;
+    background-color: #f6f6f6;
+  }
+
+  .fixed-test-btns a {
+    margin: 0;
+    width: 33.3%;
+    text-align: center;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 0px #8a8787;
+  }
+
+  .fixed-test-btns img {
+    width: 35px;
+    padding: 8px 0;
+  }
+
+  /* END OF HOME */
+
+  /* Which test hero */
+  #divi-hero .header-content {
+    padding: 0;
+    width: 100%;
+  }
+
+  #divi-hero .header-content h1 {
+    line-height: 1;
+    margin: 0 0 10px;
+  }
+
+  #divi-hero .et_pb_fullwidth_header_subhead {
+    font-size: 1.25rem;
+  }
+}
+
+/* STEPS STYLING SMALL PHONES */
+
+@media (max-width: 455px) {
+  .steps .buttons {
+    width: 100%;
+  }
+
+  /* #steps-title {
+    font-size: 1.75rem;
+  } */
+}
+
+@media (max-width: 365px) {
+  /* .steps-container div {
+    width: 100%;
+  } */
+
+  #hair-steps-btn,
+  #blood-steps-btn,
+  #health-steps-btn {
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  .steps .buttons button div {
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .steps .buttons img {
+    width: 30px;
+  }
+}
+
+/*----------iphone 5/se---------- */
+
+/* ONE COLUMN */
+
+@media (max-width: 370px) {
+  /* Making everything full width, one column due to small screen size */
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .hero-text.home h3 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text.home h1 {
+    font-size: 0.9rem;
+  }
+
+  .j-btn {
+    font-size: 0.85rem !important;
+  }
+
+  /* Making everything full width, one column due to small screen size */
+  .products-container .product-j {
+    width: 100%;
+  }
+
+  /* Our tests */
+  .our-tests a {
+    width: 100%;
+  }
+
+  .our-tests .tests-container div {
+    min-height: unset;
+  }
+
+  .our-tests .tests-container .margin {
+    margin-top: 0;
+  }
+
+  .steps .flex-container {
+    align-items: center;
+  }
+
+  .steps-container div {
+    width: 100%;
+  }
+
+  .customer-promise .flex-container div {
+    width: 100%;
+  }
+
+  .review h4,
+  .review .fas,
+  .review h4,
+  .review p,
+  .review a {
+    font-size: 0.9rem;
+  }
+
+  .survey .flex-container div {
+    width: 100%;
+  }
+
+  .survey .percentage {
+    width: 35% !important;
+  }
+
+  .extra-info div {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+/* EMD OF iphone 5/se  */
+
+/*----------OTHER STYLING---------- */
+
+.ewd-ufaq-field-label {
+  display: none;
+}
+
+/*Reviews section */
+.tyi-why-us .container a.tyi-find-more,
+.tyi-review .container a,
+.customer-promise a,
+.tyi-find-more-healthy,
+.tyi-benefits-button {
+  display: block;
+  margin: 0 auto;
+  max-width: 260px;
+  padding: 8px 20px;
+  color: #fff;
+  border-radius: 500px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 70px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.container.reviews h2 {
+  color: #93ce85;
+  text-align: center;
+  font-size: 30px;
+}
+
+.container.reviews b {
+  color: #93ce85;
+  font-weight: 700;
+}
+
+.container.reviews a {
+  background: #93ce85;
+  margin-bottom: 100px;
+}
+
+.container.reviews a:hover {
+  transform: scale(1.05);
+  background: #5fb649;
+}
+
+.review-right {
+  float: right;
+  display: flex;
+}
+
+.review-author {
+  margin-right: 10px;
+  color: #999;
+  font-size: 17px;
+}
+
+.review-stars {
+  min-width: 120px;
+}
+
+.review-right .fas {
+  color: #93ce85;
+}
+
+.review-icon {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 100px;
+  box-shadow: 0px 0px 10px -5px #444;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 50px;
+  padding-top: 12px;
+  font-size: 25px;
+  color: #93ce85;
+}
+
+@media only screen and (max-width: 650px) {
+  .review-icon {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .review-author {
+    font-size: 12px !important;
+    line-height: 16px;
+  }
+
+  .review-right {
+    margin-top: 7px;
+  }
+
+  .why-us-bubble {
+    display: none;
+  }
+}
+
+/* WHICH TEST ACCORDION */
+
+#which-test-accordion .et_pb_toggle {
+  padding: 10px;
+}
+
+#which-test-accordion .et_pb_toggle_title {
+  margin: 15px 0;
+}
+
+#which-test-accordion .et_pb_toggle_close h5.et_pb_toggle_title {
+  color: #c1bcbc;
+  font-weight: 500;
+  margin: 20px 0 0;
+}
+
+/* Which test button */
+#text-button p {
+  text-align: center;
+}
+
+.swatch-inner .swatch-label-inner {
+  color: red !important;
+}
+
+/* Hide bloodsuite attribute on product pages */
+label[for="pa_bloodsuite"],
+#pa_bloodsuite,
+.variation-bloodsuite {
+  display: none !important;
+}
+
+/* Nutritonal Therapy and fast track hidden*/
+.product-name .amount {
+  display: contents !important;
+}
+
+.related.products .product .add_to_cart_button {
+  border-radius: 20px !important;
+}
+
+/* MY ACCOUNT STYLING */
+
+/* My account page adding space to footer */
+#post-11 {
+  margin-bottom: 50px;
+}
+
+#post-11 .main_title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#post-11 h2 {
+  font-size: 1.25rem;
+}
+
+.woocommerce-form-login .lost_password {
+  margin-top: 20px;
+}
+
+/* Giving margin to save changes button */
+.woocommerce-MyAccount-content fieldset {
+  margin-bottom: 25px;
+}
+/* END OF MY ACCOUNT */
+
+/* Problem foods and symptoms landing page */
+
+#foods img,
+#symptoms img {
+  transition: all 0.2s;
+  padding: 20px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  border: solid 3px #e6e6e6;
+}
+
+#foods img:hover,
+#symptoms img:hover {
+  border: solid 3px #0c7088;
+}
+
+#foods .et_pb_image,
+#symptoms .et_pb_image {
+  margin: 0 0 10px !important;
+}
+
+#foods span,
+#symptoms span,
+#foods .buttons-row p,
+#symptoms .buttons-row p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  #foods .et_pb_row .et_pb_column.et_pb_column_1_4,
+  .et_pb_row .et_pb_column.et_pb_column_1_5,
+  .et_pb_row .et_pb_column.et_pb_column_1_6,
+  #symptoms .et_pb_row .et_pb_column.et_pb_column_1_4,
+  .et_pb_row .et_pb_column.et_pb_column_1_5,
+  .et_pb_row .et_pb_column.et_pb_column_1_6 {
+    width: 45% !important;
+    margin-right: 5% !important;
+  }
+}
+
+/* Sensitivity science page hero section */
+@media (max-width: 600px) {
+  /* To reset Divi stacking order mobile, add this class */
+  #divi-flex {
+    display: flex;
+  }
+
+  #divi-flex .et_pb_column:last-child {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  #divi-flex .et_pb_column:first-child {
+    order: 2;
+  }
+
+  #post-392561 .et_pb_section_0 {
+    border-radius: 4em 4em !important;
+  }
+}
+
+/* How to take sample pages li's */
+#sample-ul li {
+  margin: 25px 0;
+}
+
+.delivery {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 10px 0 !important;
+}
+
+.delivery-banner {
+  background-color: red;
+}
+
+.delivery-home {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 10px 0 !important;
+}
+
+@media (max-width: 600px) {
+  .delivery-home {
+    font-size: 1rem;
+  }
+}
+
+/*Author css */
+.author_bio_section {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.author_name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.author_details img {
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+/* End */
+
+#recent-posts-2 li:first-of-type {
+  margin-top: 5px;
+}
+
+#recent-posts-2 li {
+  margin: 20px 0;
+}
+
+/* Over 50% OFF text zoom in and out */
+.fast {
+  display: inline-block;
+  font-size: 20px;
+  color: red !important;
+  font-weight: bold;
+  animation: beat 1s ease infinite alternate;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    height: inherit;
+    width: inherit;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(30deg);
+  }
+  &:after {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes beat {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(0deg) scale(1.1);
+  }
+}
+/* end */

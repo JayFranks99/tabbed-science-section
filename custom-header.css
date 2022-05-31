@@ -1,0 +1,1295 @@
+/* ------STYLINGS FROM LIVE SITE TO MIMIC DEV ENVIRONMENT---------- */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap'); */
+
+/* Mailchimp pop up modal */
+
+/* Desktop mailchimp pop up modal customisation, positioning to match cookie pop up */
+.mc-modal {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 520px !important;
+  margin: 0 auto !important;
+  bottom: unset !important;
+  right: unset !important;
+}
+
+/* .close-modal {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 2rem;
+  background: white;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+/* -------------------------- */
+
+/* CLASSES TO MAKE MODAL WORK */
+
+/* 
+.hidden {
+  display: none;
+}
+
+.modal {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 400px;
+  background-color: #15758c;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  color: white;
+}
+
+.modal img {
+  max-width: 85%;
+  width: 215px;
+}
+
+.modal h6 {
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.25;
+}
+
+.modal p {
+  font-size: 1.25rem;
+}
+
+.coupon-section {
+  margin: 15px 0 30px;
+}
+
+.coupon-section div p {
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+
+.tooltip {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.tooltip button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#code-container {
+  background: #ffde59;
+  margin: 5px auto;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+#code-container input {
+  background: none;
+  border: none;
+  width: 150px;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  font-size: 1rem;
+}
+
+#code-container input:active {
+  background: none;
+  border: none;
+}
+
+#code-container .fa-solid,
+#code-container .fas {
+  font-weight: unset;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 24, 24, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+  z-index: 999;
+}
+
+.overlay .j-btn {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    width: 90%;
+    padding: 2.5rem;
+  }
+
+  .modal h6 {
+    font-size: 2.25rem;
+  }
+
+  .modal p {
+    font-size: 1.1rem;
+    color: #fcfcfc;
+  }
+
+  .modal img {
+    width: 175px;
+  }
+
+  .close-modal {
+    font-size: 1.75rem;
+    width: 40px;
+    height: 40px;
+  }
+}  */
+
+/* Styling reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Blog styling reset due to font: inherit; */
+.single-post h1,
+.single-post h2,
+.single-post h3,
+.single-post h4,
+.single-post h5,
+.single-post h6 {
+  font: revert !important;
+  padding: 15px 0;
+}
+
+.single-post p {
+  line-height: 1.5;
+}
+/* End of blog */
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* Fixes bold text not being bold */
+b,
+strong {
+  font-weight: bold !important;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of styling reset */
+
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: unset;
+  padding: 0;
+  font-weight: bold;
+  color: black;
+}
+
+li,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: underline;
+}
+
+/* height of nav, push main content down */
+#et-main-area {
+  margin-top: 135px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.jay-hr {
+  width: 5%;
+  margin: 1% auto;
+  color: #0c7088;
+  border: solid 2px;
+}
+
+/* Buttons set up */
+
+/* clear button to #0c7088 */
+
+.j-btn {
+  background: none;
+  border: solid 3px #0c7088;
+  color: #0c7088;
+  border-radius: 2em;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 11px 25px;
+  font-size: 1.1rem;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.j-btn:hover {
+  background: #0c7088;
+  color: white;
+}
+
+/* #0c7088 button to clear */
+
+.j-btn.btn2 {
+  background: #0c7088;
+  border: solid 3px #0c7088;
+  color: white;
+}
+
+.j-btn.btn2:hover {
+  background: white;
+  border: solid 3px #0c7088;
+  color: #0c7088;
+}
+
+/* clear white button to #0c7088 white text */
+.j-btn.btn3 {
+  background: none;
+  border: solid 3px white;
+  color: white;
+}
+
+.j-btn.btn3:hover {
+  background: #0c7088;
+  border-color: #0c7088;
+}
+
+.j-btn.btn4 {
+  background: white;
+  color: #0c7088;
+  border: solid 3px white;
+}
+
+.j-btn.btn4:hover {
+  background: none;
+  border: solid 3px white;
+  color: white;
+}
+
+.shop-btn {
+  padding: 11px 20px !important;
+  margin: 0px 20px;
+  margin-right: 0;
+  font-size: 0.9rem !important;
+  font-weight: bold !important;
+  border: solid 3px #0c7088 !important;
+}
+
+/* Scroll up icon position */
+.et_pb_scroll_top.et-pb-icon {
+  right: 10px !important;
+  bottom: 25px !important;
+  border-radius: 50% !important;
+  height: 50px;
+  padding: 7.5px !important;
+  width: 50px;
+  z-index: 100 !important;
+}
+
+/* Customising scroll up icon due to "2" issue*/
+.et_pb_scroll_top:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f077" !important;
+}
+
+/* Main nav styles*/
+
+#nav-con .container {
+  max-width: 1300px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#nav-con .flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Text fade in an out */
+#scroll-container {
+  background-color: #ac131d;
+  text-align: center;
+  padding: 14px 0 26px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+#scroll-text p {
+  color: white;
+  font-size: 0.9rem;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 11px;
+}
+
+@media screen and (max-width: 800px) {
+  #scroll-text p {
+    top: 11px;
+  }
+}
+
+/* Top header scroll text */
+.js-nametag {
+  position: absolute;
+}
+
+.js-nametag:nth-child(1) {
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate-reverse;
+}
+
+.js-nametag:nth-child(2) {
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+}
+
+@keyframes fade {
+  0%,
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#nav-con {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: white;
+  border-bottom: 2px solid #f3f3f3;
+  box-shadow: 0px 2px 8px 0px #bdbcbc;
+  -webkit-box-shadow: 0px 2px 8px 0px #bdbcbc;
+  width: 100%;
+}
+
+/* header */
+.header {
+  background-color: #fff;
+  box-shadow: 0px 2px 8px 0px #bdbcbc;
+  -webkit-box-shadow: 0px 2px 8px 0px #bdbcbc;
+  position: absolute;
+  width: 100%;
+  padding: 25px 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Checkout fix */
+.header p {
+  line-height: unset;
+}
+
+.dropdown-header h4 {
+  padding: 0 !important;
+}
+
+.header label:after {
+  content: unset;
+}
+
+.logo img {
+  width: 190px;
+  max-width: 190px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border: 3px solid transparent;
+}
+
+.dropdown li a {
+  font-size: 1.1rem;
+}
+
+/* When input is checked, show dropdown nav */
+.header .menu-btn:checked ~ .menu {
+  max-height: 100vh;
+}
+
+/* DROPDOWN MENU */
+.header .menu {
+  clear: both;
+  position: absolute;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  top: 90px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+/* Classes toggled for nav in JS */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* .border-bottom {
+    border-bottom: solid 2px #f3f3f3;
+  } */
+/* END */
+
+.menu .dropdown li {
+  padding: 0;
+  border: none;
+}
+
+.menu li a,
+.shop-btn,
+.mobile-bottom-links a {
+  text-transform: capitalize;
+}
+
+.dropdown-button {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+/* Hiding input boxes */
+.menu-btn,
+.menu input {
+  display: none;
+}
+
+.header .drop-icon {
+  position: relative;
+  user-select: none;
+  text-align: center;
+  position: relative;
+}
+
+.header .fa {
+  color: #0c7088;
+}
+
+.header .dropdown {
+  height: 0;
+  width: 100%;
+  transition: height 0.4s ease;
+  padding: 0 5%;
+}
+
+.dropdown div {
+  padding: 20px 0;
+}
+
+.dropdown-div img {
+  width: 75px;
+}
+
+/* Triggers dropdown acroos full width - for mobile primarily*/
+.dropdown-div label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-con .mobile-only-link {
+  display: none;
+}
+
+.mobile-bottom-links {
+  display: none;
+}
+
+header .fas {
+  font-size: 2rem;
+  color: #0c7088;
+}
+
+.menu li a {
+  color: black;
+}
+
+.dropdown-div a,
+.dropdown div {
+  text-align: left;
+}
+
+.nav-links-right a {
+  padding: 0 5% !important;
+}
+
+/* HAMBURGER icon */
+.header .menu-icon {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  right: 5%;
+}
+
+/* Middle hamburger line */
+.header .menu-icon .navicon {
+  background: #0c7088;
+  display: block;
+  height: 4px;
+  position: relative;
+  transition: background 0.2s ease;
+  width: 30px;
+}
+
+/* Top and bottom hamburger lines which rotate on click */
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #0c7088;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+/* Bottom hamburger line */
+.header .menu-icon .navicon:before {
+  top: 13px;
+}
+
+/* Top hamburger line */
+.header .menu-icon .navicon:after {
+  top: -13px;
+}
+
+/* Make middle line dissapear on click */
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+/* Rotate line */
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+/* Rotate line */
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* START of cart icon and total amount styling */
+.cart-jay {
+  position: relative;
+}
+
+.cart-jay .circle {
+  position: absolute;
+  top: -18px;
+  right: -17px;
+  width: 30px;
+}
+
+.amount-of-items {
+  font-size: 12.5px;
+  /* Added due to checkout messing styling */
+  line-height: unset !important;
+}
+
+.circle {
+  /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
+  /* width: 20%; */
+  border-radius: 50%;
+  margin-left: 10px;
+
+  /* (B) BACKGROUND COLOR */
+  background: #0b677d;
+
+  /* (C) NECESSARY TO POSITION TEXT BLOCK */
+  line-height: 0;
+  position: relative;
+}
+
+/* (D) MATCH HEIGHT */
+.circle::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* (E) TEXT BLOCK */
+.circle-txt {
+  /* (E1) CENTER TEXT IN CIRCLE */
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+.active {
+  border-left: solid 5px #0c7088 !important;
+  border-bottom: solid 2px #f3f3f3 !important;
+  border-top: solid 2px #f3f3f3 !important;
+}
+
+@media (max-width: 1250px) {
+  .cart-jay .circle {
+    top: -15px;
+    right: -12px;
+    width: 25px;
+  }
+
+  .amount-of-items {
+    font-size: 12.5px;
+  }
+}
+
+/* END of cart icon and total amount styling */
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 1251px) {
+  .header {
+    padding: 0;
+    height: 95px;
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: unset;
+    box-shadow: none;
+  }
+
+  .header .menu {
+    position: relative;
+    top: unset;
+    display: flex;
+    max-height: 100%;
+    height: 100%;
+    width: 70%;
+    padding: 0;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .menu .dropdown-button {
+    padding: 0 7.5px 36px;
+    position: relative;
+    top: 17px;
+  }
+
+  .header .logo {
+    position: unset;
+    display: flex;
+  }
+
+  .header .menu-icon {
+    position: unset;
+    display: none;
+  }
+
+  .logo-div {
+    width: 22.5%;
+    margin-right: 10px;
+  }
+
+  .logo-div img {
+    width: 200px;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .nav-links-right {
+    width: 37.5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .dropdown-button {
+    display: block !important;
+  }
+
+  .dropdown-button i {
+    margin-left: 5px;
+  }
+
+  .menu li {
+    padding: 0;
+    border: none;
+  }
+
+  .header .dropdown {
+    display: flex;
+    height: 0;
+    width: 100%;
+    transition: height 0.3s ease;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 136px;
+    justify-content: space-between;
+  }
+
+  .dropdown div {
+    padding: 15px 0;
+  }
+
+  /* SHOW DROPDOWN DIV ON HOVER */
+  .menu .dropdown-div:hover .dropdown {
+    height: 370px;
+    box-shadow: 0px 8px 10px 0px #ddd, 0px 0px 10px -13px rgb(0 0 0 / 0%);
+    -webkit-box-shadow: 0px 8px 10px 0px #ddd,
+      0px 0px 10px -13px rgb(0 0 0 / 0%);
+  }
+
+  .menu #advice-dropdown:hover .dropdown,
+  .menu #why-us-dropdown:hover .dropdown,
+  .menu #flag-dropdown:hover .dropdown {
+    height: 190px !important;
+  }
+
+  #flag-dropdown .dropdown div,
+  #flag-dropdown .dropdown-header {
+    text-align: center;
+  }
+
+  .dropdown-button {
+    border-bottom: 3px solid transparent;
+    transition: 0.1s ease;
+  }
+
+  /* When hovering over the dropdown div (whole nav item) show bottom vorder to that dropdown button link  */
+  .menu .dropdown-div:hover .dropdown-button {
+    border-bottom: solid 3px #0c7088;
+  }
+
+  .menu .dropdown-div:hover .dropdown-button label {
+    color: #0c7088;
+  }
+
+  .menu li a {
+    padding: 37px 7.5px;
+    font-size: 1rem;
+  }
+
+  .dropdown li a {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .menu .dropdown a:hover,
+  .blog-link:hover {
+    text-decoration: underline;
+    color: #0c7088;
+  }
+
+  .dropdown-header:hover > h4 {
+    color: #0c7088;
+  }
+
+  #how-it-works .dropdown-header,
+  #pet-tests .dropdown-header,
+  #how-it-works .dropdown-header:hover > h4,
+  #pet-tests .dropdown-header:hover > h4 {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #trustbadge-container-98e3dadd90eb493088abdc5597a70810 {
+    z-index: 10 !important;
+  }
+
+  /* Hiding for now, needs sorting for mobile */
+  #flag-dropdown {
+    display: none !important;
+  }
+
+  .logo-div {
+    padding-left: 5%;
+  }
+
+  .header .logo {
+    display: flex;
+  }
+
+  .logo img {
+    max-width: 175px;
+    width: 100%;
+  }
+  /*
+    .header .menu {
+      border-top: solid 2px #f1f1f1;
+    } */
+
+  .header {
+    border-bottom: solid 2px #f3f3f3;
+  }
+
+  .dropdown a {
+    padding: 10px 0 !important;
+  }
+
+  /* When input is checked, set height of dropdown menu - height allows transtion */
+  .header .drop-btn:checked ~ .dropdown {
+    height: 1335px;
+    border-bottom: solid 2px #f3f3f3 !important;
+  }
+
+  .header .drop-btn2:checked ~ .dropdown {
+    height: 1335px;
+    border-bottom: solid 2px #f3f3f3 !important;
+  }
+
+  .header .drop-btn3:checked ~ .dropdown {
+    height: 765px;
+    border-bottom: solid 2px #f3f3f3 !important;
+  }
+
+  .header .drop-btn4:checked ~ .dropdown {
+    height: 765px;
+    border-bottom: solid 2px #f3f3f3 !important;
+  }
+
+  /* Custom transtion due to height, needs different value */
+  /* .header #tests, .header #works-dropdown  {
+      transition: height .5s ease;
+    } */
+
+  /* Space between links for mobile, label targeted for better clicking functionality */
+  .dropdown-div label,
+  .mobile-only-link,
+  .blog-link {
+    padding: 25px 5%;
+  }
+
+  #nav-con .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  #nav-con .dropdown .container {
+    width: 100%;
+  }
+
+  #nav-con .mobile-only-link {
+    display: block;
+  }
+
+  .mobile-bottom-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 2.5% auto;
+    padding: 2.5% 0;
+    border-top: solid 3px #f3f3f3;
+    border-bottom: solid 3px #f3f3f3;
+  }
+
+  .mobile-bottom-links a {
+    color: black;
+    font-size: 1.1rem;
+    margin: 25px 0;
+    text-decoration: none !important;
+  }
+
+  .login-btn-2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .login-btn-2 i {
+    margin-left: 5px;
+  }
+
+  /* To allow hamburger css animation + trigger of menu */
+  .nav-links-right {
+    right: 19%;
+    position: absolute;
+    display: flex;
+  }
+
+  .nav-links-right a {
+    padding: 0 !important;
+  }
+
+  .login-btn,
+  .nav-links-right .j-btn {
+    display: none;
+  }
+
+  .active {
+    border-left: solid 5px #0c7088 !important;
+    border-bottom: solid 2px #f3f3f3 !important;
+    border-top: solid 2px #f3f3f3 !important;
+  }
+}
+
+/* Between these widths */
+@media screen and (max-width: 1249px) and (min-width: 601px) {
+  .nav-links-right {
+    right: 15%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .logo img {
+    max-width: 150px;
+  }
+
+  .header .menu {
+    top: 85px;
+  }
+
+  .nav-links-right {
+    right: 23%;
+  }
+
+  #scroll-text p {
+    font-size: 0.75rem;
+  }
+}
+
+/* FLAG BUTTON CODE */
+#flag-button {
+  position: fixed;
+  top: 63px;
+  right: 10px;
+  border: none !important;
+  transition: all 0.2s;
+  z-index: 2;
+  padding: 0 0 30px 25px;
+}
+
+#flag-button img {
+  border: solid 3px transparent !important;
+  border-radius: 50%;
+}
+
+.menu .dropdown-div:hover #flag-button img {
+  border: solid 3px #0c7088 !important;
+}
+
+/*Cookie Consent Begin*/
+#cookieConsent {
+  background-color: #0c7088;
+  color: white;
+  line-height: 1.75;
+  padding: 40px 45px;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 25%; */
+  width: 350px;
+  margin: 0 auto !important;
+  display: none;
+  z-index: 9999;
+  box-shadow: 0px 0px 15px 0px #616161;
+  -webkit-box-shadow: 0px 0px 15px 0px #616161;
+}
+
+#closeBtnDiv {
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 20%);
+  cursor: pointer;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 2;
+}
+
+#closeCookieConsent {
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+#cookie-content img {
+  /* max-width: 50%; */
+  max-width: 150px;
+}
+
+#cookie-content p {
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+#cookie-content button {
+  margin-top: 20px;
+}
+
+#cookie-content a {
+  color: white;
+  font-weight: bold;
+}
+
+#cookie-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+  /* height of nav, push main content down */
+  #et-main-area {
+    margin-top: 135px;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .jay-hr {
+    width: 10%;
+  }
+
+  #cookieConsent {
+    width: 90%;
+    padding: 10% 5%;
+  }
+
+  /* Mailchimp pop up banner */
+  .mc-banner {
+    top: 50% !important;
+    width: 90% !important;
+    left: 5% !important;
+    padding: 12.5px 0;
+    /* Place behind cookie pop up first */
+    z-index: 9998 !important;
+  }
+
+  .modalContent__image {
+    background-size: contain !important;
+  }
+}
